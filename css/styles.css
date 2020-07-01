@@ -205,8 +205,8 @@ header {
     background-image: url(../images/m-bg-1.png), url(../images/m-bg-2.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0 100%, 100% 0;
-    background-size: 40%, 40%;
-    height: 450px;
+    background-size: 50%, 50%;
+    height: 550px;
 }
 .m-panel {
     text-align: left;
@@ -229,16 +229,91 @@ header {
     font-family: MBold;
 }
 .mahsulot-2 {
+    align-items: center;
     justify-content: flex-end;
     background-color: #ffff;
+    height: 100%;
 }
 .mahsulot-3 .m-panel-title, .mahsulot-4 .m-panel-title {
     font-size: 20px;
     margin: 0;
 }
-
+.mahsulot-3 .m-panel-price span, .mahsulot-4 .m-panel-price span {
+    font-size: 30px;
+}
 .mahsulot-3, .mahsulot-4 {
+    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     background-color: #ffff;
+    height: 100%;
+    background-image: url(../images/mahsulot-3.png);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 90%;
+
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "a a b b"
+        "a a c d"
+       
+}
+.m1 {
+    grid-area: a;
+}
+.m2 {
+    grid-area: b;
+    padding: 0 0 2em 2em;
+}
+.m3 {
+    grid-area: c;
+    padding-left: 2em;
+}
+.m4 {
+    grid-area: d;
+    padding-left: 2em;
+}
+.m3 .m-panel, .m4 .m-panel {
+    padding-left: 3em;
+    padding-top: 2em;
+    background: linear-gradient(137.32deg, rgba(255, 255, 255, 0.56) -13.7%, #FFFFFF 56.45%);
+    border-radius: 160px 0px 0px 0px;
+}
+.yuriqnoma {
+    background: url(../images/book.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: auto;
+    padding-bottom: 2em;
+}
+.yuklash {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    background: var(--first-color);
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: -o-fit-content;
+    color: #ffffff;
+    font-family: MBold;
+   
+}
+.yuklash:hover {
+    color: #ffffff;
+}
+.yuklash img {
+    margin-right: 0.5em;
+}
+.mahsulot {
+    background-image: url(../images/product-bg.png);
+    background-position: 5% 135%;
+    background-size: 45%;
+    background-repeat: no-repeat;
 }
