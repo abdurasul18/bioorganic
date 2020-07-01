@@ -10,6 +10,10 @@
     src: url('../fonts/MerriweatherBold.ttf');
     font-family: MBold;
 }
+@font-face {
+    src: url('../fonts//CeraProRegular.otf');
+    font-family: CRegular;
+}
 * {
     margin: 0;
     padding: 0;
@@ -316,4 +320,72 @@ header {
     background-position: 5% 135%;
     background-size: 45%;
     background-repeat: no-repeat;
+}
+.s-panel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 2em;
+}
+.col-6:nth-child(2n+1) .s-panel {
+    margin-right: 3em;
+}
+.s-panel-img {
+    margin-right: 1em;
+}
+
+
+
+.s-panel-title {
+    font-size: 24px;
+    font-family: MBold;
+}
+.s-panel-body {
+    font-size: 13px;
+    opacity: 0.5;
+}
+.tarkib-title {
+    font-size: 46px;
+    font-family: MBold;
+}
+.tarkib-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.5;
+    padding-bottom: 0.5em;
+    width: max-content;
+    border-bottom: 5px solid var(--first-color);
+}
+.t-title {
+    font-size: 10px;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.t-text {
+    font-size: 14px;
+    font-family: MBold;
+    text-transform: uppercase;
+    line-height: 31px;
+    margin-bottom: 1em;
+}
+.t-prosent {
+    font-family: CRegular;
+    font-weight: 900;
+    color: var(--first-color);
+    font-size: 34px;
+    line-height: 30px;
+    margin-bottom: 1em;
+}
+.tarkib {
+    /* background: url(../images/Biogumus.png) no-repeat 200px  0 / auto; */
+    padding: 2.5em 0;
+}
+.about-tarkib {
+    position: relative;
+}
+.tarkib-img {
+    position: absolute;
+    top: -20%;
+    left: -95%;
+
 }
