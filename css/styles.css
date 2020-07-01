@@ -120,6 +120,7 @@ header {
     margin-top: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
+    position: relative;
 }
 .c-panel {
     display: flex;
@@ -161,4 +162,15 @@ header {
 .carousel-indicators li.active {
     background:#5BC949;
    
+}
+.carousel-bg{
+    content: '';
+    position: absolute;
+    left: -15%;
+    bottom: -30%;
+    background-image: url(../images/carousel-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: -1;
+    transform: rotate(-26deg) ;
 }
