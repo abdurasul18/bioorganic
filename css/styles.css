@@ -396,13 +396,40 @@ header {
 }
 .galereya-grid {
     display: grid;
-    grid-template-columns:repeat(5, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto auto;
-	grid-gap:25px;
+    grid-template-areas:
+        "a a a b b c c c c"
+        "a a a d d e e f f"
+       
 }
 .img-1 {
-    grid-row: 1 / -1;
+   grid-area: a;
+   padding-right: 1em;
+}
+.img-2 {
+    grid-area: b;
+   padding: 0 1em 1em 1em;
 }
 .img-3 {
-    grid-column: 3 / -1;
+    grid-area: c;
+    padding: 0 0 1em 1em;
+}
+.img-4 {
+    grid-area: d;
+    padding: 1em 1em 0 1em;
+}
+.img-5 {
+    grid-area: e;
+    padding: 1em 1em 0 1em;
+}
+.img-6 {
+    grid-area: f;
+    padding: 1em 0 0 1em;
+}
+.galereya-grid img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
