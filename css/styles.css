@@ -31,6 +31,10 @@ body {
     color: var(--second-color);
     font-family: MRegular;
 }
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 a:hover {
     text-decoration: none;
 }
@@ -130,6 +134,12 @@ h1, h2, h3 {
     margin: 0 15px;
     
 }
+@media only screen and (max-width:1200px){
+    .nav-item {
+        margin: 0 5px;
+        
+    }
+}
 .nav-item a {
     color: var(--second-color);
 }
@@ -139,7 +149,14 @@ h1, h2, h3 {
     padding: 1em;
     margin-left: auto;
 }
-
+@media only screen and (max-width:992px){
+    .tel {
+        display: inline-block;        
+    }
+    .nav-item {
+        margin: 0.5em 0;
+    }
+}
 .tel span {
     color: #ffffff;
     font-family: MBold;
@@ -272,7 +289,11 @@ header {
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 90%;
-
+}
+@media only screen and (max-width:992px){
+    .mahsulot-2 {
+        margin-top: 2em;
+    }
 }
 .products {
     display: grid;
@@ -282,6 +303,18 @@ header {
         "a a b b"
         "a a c d"
        
+}
+@media only screen and (max-width:992px){
+    .products {
+        grid-template-areas:
+            "a a a a"
+            "b b b b"
+            "c c d d";
+    }
+    .products .m2, .products .m3{
+        padding-left: 0;
+    }
+
 }
 .m1 {
     grid-area: a;
@@ -344,6 +377,18 @@ header {
     align-items: flex-end;
     margin-bottom: 2em;
 }
+@media only screen and (max-width:992px){
+    .s-panel {
+        display: block;
+    }
+    .s-panel-img {
+        height: 170px;
+        margin-bottom: 1em;
+    }
+    .s-panel-img img {
+        height: 100%;
+    }
+}
 .col-6:nth-child(2n+1) .s-panel {
     margin-right: 3em;
 }
@@ -394,7 +439,6 @@ header {
     margin-bottom: 1em;
 }
 .tarkib {
-    /* background: url(../images/Biogumus.png) no-repeat 200px  0 / auto; */
     padding: 2.5em 0;
 }
 .about-tarkib {
@@ -405,6 +449,23 @@ header {
     top: -20%;
     left: -95%;
 }
+@media only screen and (max-width:1200px){
+    .tarkib-img {
+        left: -110%;
+    } 
+}
+@media only screen and (max-width:992px){
+    .tarkib-img {
+        left: -126%;
+        top: 0;
+        height: 500px;
+    } 
+    .tarkib-img img {
+        width: auto;
+        height: 100%;
+    }
+}
+
 .galereya-title {
     font-size: 34px;
     line-height: 43px;
@@ -473,6 +534,11 @@ header {
     height: 130px;
     width: 150px;
 }
+@media only screen and (max-width:992px) {
+    .logo {
+        width: 130px;
+    }
+}
 .hamkor {
     background-image: url(../images/hamkor-bg-1.svg);
     background-position: 75% 32%;
@@ -494,6 +560,15 @@ header {
 }
 .contact {
     position: relative;
+}
+@media only screen and (max-width:992px){
+    .contact label {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .contact form {
+       margin-bottom: 2em;
+    }
 }
 .contact-bg {
     position: absolute;
@@ -549,11 +624,25 @@ header {
     line-height: 110%;
     font-family: Gilroy;
 }
+@media only screen and (max-width:1200px){
+    .social a {
+        width: 90%;
+    } 
+}
 .social a img {
     margin-right: 0.3em;
 }
 .footer-nav .nav-container {
     transform: translateY(-15px);
+    border: 0;
+}
+@media only screen and (max-width:992px){
+    .footer-nav .navbar, .footer-nav .navbar-nav, .footer-nav .nav-item {
+        display: inline-block;
+    }
+    .footer-nav .nav-item {
+        margin: 0.5em 1em;
+    }
 }
 footer {
     background: #fff;
@@ -577,9 +666,22 @@ footer {
     color: var(--second-color);
     opacity: 0.5;
 }
+@media only screen and (max-width:992px){
+    .footer-links {
+        display: block;
+    }
+    .footer-links a {
+        max-width: fit-content;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: -o-fit-content;
+        margin: 1em 0;
+    }
+}
 .footer-links a img {
     margin-right: 0.4em;
 }
+
 .g-map {
     width: 250px;
 }
