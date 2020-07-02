@@ -387,5 +387,22 @@ header {
     position: absolute;
     top: -20%;
     left: -95%;
-
+}
+.galereya-title {
+    font-size: 34px;
+    line-height: 43px;
+    font-family: MBold;
+    text-align: center;
+}
+.galereya-grid {
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: auto auto;
+	grid-gap:25px;
+}
+.img-1 {
+    grid-row: 1 / -1;
+}
+.img-3 {
+    grid-column: 3 / -1;
 }
