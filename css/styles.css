@@ -72,7 +72,7 @@ h1, h2, h3 {
 .hamburger .line{
     width: 27px;
     height: 1px;
-    background-color: #333333;
+    background-color: var(--second-color);
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -479,12 +479,30 @@ header {
     background-size: 39%;
     background-repeat: no-repeat;
 }
+@media only screen and (min-width:1920px){
+   .hamkor { 
+       background-position: 75% 32%;
+        background-size: 30%;
+   }
+}
 .hamkor-container {
     background-image: url(../images/hamkor-bg-2.svg);
     background-repeat: no-repeat;
     background-position: 100% 84%;
     background-size: 40%;
     padding-bottom: 10em;
+}
+.contact {
+    position: relative;
+}
+.contact-bg {
+    position: absolute;
+    z-index: -1;
+    top: -110%;
+    left: -3%;
+}
+.contact-bg img {
+    width: 100%;
 }
 .contact form label{
     font-size: 12px;
@@ -534,9 +552,13 @@ header {
 .social a img {
     margin-right: 0.3em;
 }
+.footer-nav .nav-container {
+    transform: translateY(-15px);
+}
 footer {
     background: #fff;
     padding-top: 2em;
+    z-index: 5;
 }
 .footer-container {
     font-size: 12px;
