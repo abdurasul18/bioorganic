@@ -176,12 +176,35 @@ header {
     height: 100%;
     margin-top: 4em;
 }
+@media only screen and (max-width:768px) {
+    #carousel {
+        padding-bottom: 4em;
+    }
+    .c-panel {
+        margin-top: 0;
+    }
+    .c-panel .c-panel-header {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .c-img img{
+        display: none;
+
+    }
+    .c-panel {
+        background-image: url(../images/carousel-img-1.png);
+        background-repeat: no-repeat;
+        background-position: 110% 150%;
+        background-size: 50%;
+    }
+}
+
 .c-panel-header {
     font-size: 24px;
     line-height: 130%;
     margin-bottom: 1em;
     font-family: MBold;
-
 }
 .c-panel-btn {
     border-radius: 4px;
@@ -295,6 +318,17 @@ header {
         margin-top: 2em;
     }
 }
+@media only screen and (max-width: 768px){
+    .mahsulot-1 {
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .mahsulot-1 {
+        height: 320px;
+        background-size: 40%, 50%;
+    }
+}
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -313,6 +347,21 @@ header {
     }
     .products .m2, .products .m3{
         padding-left: 0;
+    }
+
+}
+@media only screen and (max-width: 576px){
+    .products {
+        grid-template-areas:
+            "a a a a"
+            "b b b b"
+            "c c c c"
+            "d d d d"
+            ;
+    }
+    .products .m4{
+        padding-left: 0;
+        padding-top: 2em;
     }
 
 }
@@ -344,6 +393,12 @@ header {
     background-size: auto;
     padding-bottom: 2em;
 }
+@media only screen and (max-width: 576px){
+    .yuriqnoma {
+        background-position: 100% 100%;
+        background-size: 50%;
+}
+}
 .yuklash {
     margin-top: 3em;
     display: flex;
@@ -357,7 +412,6 @@ header {
     width: -o-fit-content;
     color: #ffffff;
     font-family: MBold;
-   
 }
 .yuklash:hover {
     color: #ffffff;
@@ -380,6 +434,7 @@ header {
 @media only screen and (max-width:992px){
     .s-panel {
         display: block;
+        margin-right: 1em;
     }
     .s-panel-img {
         height: 170px;
@@ -389,9 +444,25 @@ header {
         height: 100%;
     }
 }
-.col-6:nth-child(2n+1) .s-panel {
-    margin-right: 3em;
+@media only screen and (max-width:576px){
+     .s-panel {
+       margin: 0;
+    }
+    .s-panel .s-panel-img {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-panel-body {
+        text-align: justify;
+    }
+   .s-panel-title {
+       text-align: center;
+   }
+
 }
+
 .s-panel-img {
     margin-right: 1em;
 }
@@ -417,6 +488,7 @@ header {
     padding-bottom: 0.5em;
     width: max-content;
     border-bottom: 5px solid var(--first-color);
+    max-width: 100%;
 }
 .t-title {
     font-size: 10px;
@@ -427,7 +499,6 @@ header {
     font-size: 14px;
     font-family: MBold;
     text-transform: uppercase;
-    line-height: 31px;
     margin-bottom: 1em;
 }
 .t-prosent {
@@ -437,6 +508,19 @@ header {
     font-size: 34px;
     line-height: 30px;
     margin-bottom: 1em;
+}
+
+@media only screen and (max-width:576px){
+    .t-title {
+        font-size: 8px;
+    }
+    .t-text {
+        font-size: 10px;
+        margin-bottom: 1em;
+    }
+    .t-prosent {
+        font-size: 26px;
+    }
 }
 .tarkib {
     padding: 2.5em 0;
@@ -464,6 +548,11 @@ header {
         width: auto;
         height: 100%;
     }
+}
+@media only screen and (max-width: 768px){
+    .tarkib-img {
+       display: none;
+    } 
 }
 
 .galereya-title {
@@ -511,6 +600,33 @@ header {
     object-fit: cover;
     height: 100%;
 }
+@media only screen and (max-width: 768px){
+    .galereya-grid {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (max-width: 576px){
+    .galereya-grid {
+        font-size: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "a a b b"
+        "a a d d"
+        "c c c c"
+        "e e f f"
+    }
+    .galereya-grid .img-3 {
+        padding-top: 2em;
+        padding-left: 0;
+    }
+    .galereya-grid .img-5 {
+        padding-left: 0;
+    }
+    .galereya-grid .img-2, .galereya-grid .img-4 {
+        padding-right: 0;
+    }
+}
 .hamkor-title {
     font-size: 34px;
     line-height: 43px;
@@ -535,6 +651,19 @@ header {
     width: 150px;
 }
 @media only screen and (max-width:992px) {
+    .logo {
+        width: 130px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .hamkor-logos .logo {
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .hamkor-logos {
+        margin-left: 0;
+    }
     .logo {
         width: 130px;
     }
@@ -596,6 +725,12 @@ header {
     padding: 1em;
     font-family: CRegular;
 
+}
+@media only  screen and (max-width: 576px) {
+    .contact input {
+        width: auto;
+        margin-right: 0.5em;
+    } 
 }
 .contact input::placeholder {
     color: var(--first-color);
