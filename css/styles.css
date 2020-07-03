@@ -668,15 +668,9 @@ header {
         width: 130px;
     }
 }
-.hamkor {
-    background-image: url(../images/hamkor-bg-1.svg);
-    background-position: 75% 32%;
-    background-size: 39%;
-    background-repeat: no-repeat;
-}
 @media only screen and (min-width:1920px){
    .hamkor { 
-       background-position: 75% 32%;
+        background-position: 75% 32%;
         background-size: 30%;
    }
 }
@@ -686,9 +680,43 @@ header {
     background-position: 100% 84%;
     background-size: 40%;
     padding-bottom: 10em;
-}
-.contact {
     position: relative;
+}
+@media only  screen and (max-width: 992px) {
+    .hamkor-container {
+        background: none;
+    }
+}
+@media only  screen and (max-width: 576px) {
+    .hamkor-container {
+        padding-bottom: 5em;
+    }
+}
+.hamkor-container::before {
+    content: '';
+    position: absolute;
+    right: -12%;
+    top: 0;
+    background-image: url(../images/hamkor-bg-1.svg);
+    background-size: 100%;
+    background-position: 0% 24%;
+    background-repeat: no-repeat;
+    width: 63%;
+    height: 110%;
+    z-index: -1;
+    animation:CircleElement1 8s ease-in-out infinite
+}
+
+@keyframes CircleElement1 {
+    50% {
+        -webkit-transform:translate3d(0,50px,0);
+        transform:translate3d(0,50px,0)}
+    }
+@-moz-keyframes CircleElement1 {
+    50% {
+        -moz-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0)}
+}
+@-o-keyframes CircleElement1{50%{transform:translate3d(0,50px,0)}
 }
 @media only screen and (max-width:992px){
     .contact label {
@@ -699,14 +727,43 @@ header {
        margin-bottom: 2em;
     }
 }
-.contact-bg {
-    position: absolute;
-    z-index: -1;
-    top: -110%;
-    left: -3%;
+.contact-container {
+    position: relative;
 }
-.contact-bg img {
-    width: 100%;
+.contact-container::before {
+    content: '';
+    position: absolute;
+    left: -30%;
+    top: -100%;
+    bottom: -100%;
+    width: 50%;
+    right: 0;
+    background-image: url(../images/contact-bg.svg);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    z-index: -1;
+    animation:  CircleElement2 6s ease-in-out infinite ;
+}
+@media only screen and (max-width:1366px){
+    .contact-container::before {
+        left: -15%;
+        width: 45%;
+    }
+}
+@media only screen and (max-width:576px){
+    .contact-container::before {
+        width: 60%;
+    }
+}
+@keyframes CircleElement2 {
+    50% {
+        -webkit-transform:translate3d(0,50px,0);
+        transform:translate3d(0,50px,0)
+    }
+}
+.contact {
+    padding-bottom: 10em;
 }
 .contact form label{
     font-size: 12px;
@@ -726,7 +783,7 @@ header {
     font-family: CRegular;
 
 }
-@media only  screen and (max-width: 576px) {
+@media only  screen and (max-width: 1200px) {
     .contact input {
         width: auto;
         margin-right: 0.5em;
