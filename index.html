@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Bioorganik</title>
 </head>
@@ -48,7 +49,7 @@
         </nav>
     </div>
     <hr>
-    <div>
+    <div class="carousel-container">
         <div class="container">
             <header>
                 <div class="row justify-content-center">
@@ -178,7 +179,7 @@
                 </div>
             </div>
             <div class="products my-5">
-                <div class="m1">
+                <div class="m1 wow bounceInUp">
                     <div class="row mahsulot-1">
                         <div class="m-panel col-8 col-md-6">
                             <div class="m-panel-title">
@@ -193,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m2">
+                <div class="m2 wow bounceInUp" data-wow-delay="0.1s">
                     <div class="mahsulot-2 col-12 row">
                         <div class="m-panel col-10 col-md-6 p-4">
                             <div class="m-panel-title">
@@ -208,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m3">
+                <div class="m3 wow bounceInUp" data-wow-delay="0.2s" >
                     <div class="mahsulot-3">
                         <div class="m-panel pr-2">
                        <div class="m-panel-title">
@@ -223,7 +224,7 @@
                    </div>
                    </div>
                 </div>
-                <div class="m4">
+                <div class="m4 wow bounceInUp" data-wow-delay="0.3s">
                     <div class="mahsulot-4">
                         <div class="m-panel pr-2">
                             <div class="m-panel-title">
@@ -450,22 +451,22 @@
             </div>
             <div class="col-12">
                 <div class="galereya-grid">
-                    <div class="img-1">
+                    <div class="img-1 wow bounce">
                         <img src="./images/galereya1.png" alt="plants">
                     </div>
-                    <div class="img-2">
+                    <div class="img-2 wow bounce" data-wow-delay="0.1s">
                         <img src="./images/galereya2.png" alt="plants">
                     </div>
-                    <div class="img-3">
+                    <div class="img-3 wow bounce" data-wow-delay="0.4s">
                         <img src="./images/galereya3.png" alt="plants">
                     </div>
-                    <div class="img-4">
+                    <div class="img-4 wow bounce" data-wow-delay="0.2s">
                         <img src="./images/galereya4.png" alt="plants">
                     </div>
-                    <div class="img-5">
+                    <div class="img-5 wow bounce" data-wow-delay="0.7s">
                         <img src="./images/galereya5.png" alt="plants">
                     </div>
-                    <div class="img-6">
+                    <div class="img-6 wow bounce" data-wow-delay="0.7s">
                         <img src="./images/galereya6.png" alt="plants">
                     </div>
                 </div> 
@@ -487,42 +488,42 @@
                 </div>
                 <div class="col-12 row mt-5">
                     <div class="col-12 col-lg-8 row hamkor-logos">
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L1.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L2.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L3.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L4.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L5.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L6.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L7.svg" alt="logo">
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3">
+                        <div class="col-6 col-sm-4 col-md-3 wow bounceIn">
                             <a href="#" class="logo">
                                 <img src="./images/L8.svg" alt="logo">
                             </a>
@@ -629,4 +630,8 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </html>
