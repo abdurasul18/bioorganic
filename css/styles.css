@@ -217,6 +217,9 @@ header {
     margin-top: 3em;
     color: var(--second-color);
 }
+.c-panel-btn:hover {
+    color: var(--second-color);
+}
 .c-img {
     display: flex;
     justify-content: flex-end;
@@ -726,6 +729,11 @@ header {
         background-size: 30%;
    }
 }
+@media only screen and (max-width: 320px) {
+.hamkor-logos .logo {
+    width: 125px;
+}
+}
 .hamkor-container {
     background-image: url(../images/hamkor-bg-2.svg);
     background-repeat: no-repeat;
@@ -871,6 +879,11 @@ header {
 @media only screen and (max-width:1200px){
     .social a {
         width: 90%;
+    } 
+}
+@media only screen and (max-width:320px){
+    .social a {
+        font-size: 14px;
     } 
 }
 .social a img {
