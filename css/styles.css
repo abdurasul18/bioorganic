@@ -321,15 +321,16 @@ header {
         margin-top: 2em;
     }
 }
-@media only screen and (max-width: 768px){
-    .mahsulot-1 {
-        height: 400px;
-    }
-}
+
 @media only screen and (max-width: 768px){
     .mahsulot-1 {
         height: 320px;
         background-size: 40%, 50%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .mahsulot-3, .mahsulot-4 {
+        background-size: 50%;
     }
 }
 .products {
