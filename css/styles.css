@@ -891,8 +891,7 @@ header {
     margin-right: 0.3em;
 }
 .footer-nav .nav-container {
-    transform: translateY(-15px);
-    border: 0;
+   padding: 0 1em;
 }
 @media only screen and (max-width:992px){
     .footer-nav .navbar, .footer-nav .navbar-nav, .footer-nav .nav-item {
@@ -904,7 +903,6 @@ header {
 }
 footer {
     background: #fff;
-    padding-top: 2em;
     z-index: 5;
 }
 .footer-container {
